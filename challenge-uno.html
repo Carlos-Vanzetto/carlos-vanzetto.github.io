@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css"> 
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Encriptador-Alura Challenge</title>
+</head>
+<body>
+  <header>
+    <div class="caja">
+      <h1><img src="img/alura-logo.svg" alt="Logo de Alura" class="logo-img">
+      <img src="img/oracle.svg" alt="Logo de Oracle" class="logo-img">
+      </h1>
+
+      
+      <nav role="navigation" class="primary-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">En Desarrollo &dtrif;</a>
+            <ul class="dropdown">
+              <li><a href="challenge-uno.html">Challenge 1</a></li>
+              <li><a href="#">Challenge 2</a></li>
+              <li><a href="#">FEnd Challenge</a></li>
+              <li><a href="#">Iconography</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+    
+  </header>
+  <main>
+    <h1 class="titulo-principal">Código secreto</h1>
+    <div class="big-contenedor">
+      
+      <div class="contenedor">
+            
+          <label for="input-encriptar">
+            <h3 class="titulo-secundario">Escriba aquí el texto que desea encriptar o desencriptar.</h3>
+            <label>
+          <input type="text" id="input-encriptar" class="input-encript" autofocus>
+          <button class="btn" id="btn-encriptar">Encriptar</button>
+          <button class="btn" id="btn-desencriptar">Desencriptar</button>
+          <p> <img src="img/Vector.svg" alt=""> No admite uso de mayúsculas, acentos ni caracteres especiales</p>
+      </div>
+      <div class="contenedor">
+        <h3 class="titulo-secundario">Mensaje encriptado</h3>
+        <input type="text" class="input-encript" id="mostrar-copiar">
+        <button class="btn" id="btn-copiar">Copiar</button>
+      </div>
+  </div>
+
+  </main>
+
+
+  <footer>
+    <div>
+      <img src="img/alura-logo.svg" alt="logo de Alura">
+      <img src="img/oracle.svg" alt="logo de Oracle">
+      <p class="copyright">Carlos Vanzetto - Rosario, Santa Fe, Argentina - 2022</p>
+    </div>
+  </footer>
+  <script src="encrypt.js"></script>
+</body>
+</html>
