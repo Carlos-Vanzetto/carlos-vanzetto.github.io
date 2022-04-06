@@ -1,0 +1,19 @@
+.title__icon{
+  display: flex;
+}
+
+.title__icon-bigStar{
+color: #464646;
+height: 16px;
+width: 16px;
+}
+
+.title__icon-verticalStars{
+  display: flex;
+  flex-direction: column;
+}
+.title__icon-smallStar{
+  color: #464646;
+  height: 8px;
+  width: 8px;
+}

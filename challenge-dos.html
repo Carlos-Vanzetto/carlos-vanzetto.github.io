@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css"> 
+    <link rel="stylesheet" href="styles/style-c2.css">
+    <link rel="stylesheet" href="styles/flex.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="./styles/title-icon.css">
+    <link rel="stylesheet" href="./styles/header-box.css">
+    <title>Ahorcado - Alura Challenge</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__box">
+        <div class="header__box-title">  
+          <div class="title__icon">
+            <img src="./img/Vector.png" alt="" class="title__icon-bigStar">
+            <div class="title__icon-verticalStars">
+              <img src="./img/Vector.png" alt="" class="title__icon-smallStar">
+              <img src="./img/Vector.png" alt="" class="title__icon-smallStar">
+            </div>
+          </div>
+          <h1 class="title__name">Carlos Vanzetto</h1>
+        </div>
+  
+          <!--  ||    prueba de sidebar importada    ||-->
+  
+  
+        
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+              <li><a href="index.html">Sobre mi</a></li>
+              <li><a href="challenge-uno.html">Skills</a></li>
+              <li><a href="challenge-dos.html">Hobbies</a></li>
+              <li><a href="#">Formación</a></li>
+              <li><a href="#">Proyectos</a></li>
+              <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <div id='center' class="main center">
+      <div class="mainInner">
+        <div></div>
+      </div>
+      <div class="mainInner">
+        <div></div>
+      </div>
+      <div class="mainInner">
+        <div></div>
+      </div>
+    </div>
+  
+  
+        <!--   FINPRUEBA  sidebar importada  -->
+  
+        
+    <div class="menu__desktop">
+      <nav role="navigation" class="primary__navigation">
+            <ul class="lista__desktop">     
+              <li><a href="index.html">Sobre mi</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Hobbies</a></li>
+              <li><a href="#">Formación</a></li>
+              <li><a href="#">Proyectos &dtrif;</a>
+                <ul class="dropdown">
+                  <li><a href="challenge-uno.html">Encriptador</a></li>
+                  <li><a href="challenge-dos.html">Ahorcado</a></li>
+                  <li><a href="#">Iconography</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+      </nav>
+  
+    </div>
+      
+    </header>
+    <main>
+          <div  class="contenedor__uno" >
+            <h1 class="titulo__principal">Ahorcado</h1>
+              <button class="btn" id="iniciar-juego">
+                JUGAR
+              </button>
+              <input class="text__input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
+              <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+          </div>
+          <section>
+          <div class="canvas__cont">
+            <div class="mensaje"></div>
+
+            <canvas id="ahorcado" name="canvas"></canvas>
+            <div class="botonera">
+              <button class="btn" id="jugar-nuevo">Jugar de nuevo</button>
+              <button class="btn" id="surrender" >Rendirse</button>
+            </div>
+          </div>  
+        </section>   
+    </main>
+  
+    <footer>
+      <div class="footer__img">
+        <img src="img/alura-logo.svg" alt="logo de Alura" class="logo__img">
+        <img src="img/oracle.svg" alt="logo de Oracle" class="logo__img">
+      </div>
+      <p class="copyright">Carlos Vanzetto - Rosario, Santa Fe, Argentina - 2022</p>
+    </footer>
+    <script type="text/javascript" src="./components/canvas.js"></script>
+    <script type="text/javascript" src="./components/ahorcado.js"></script>
+  </body>
+</html>

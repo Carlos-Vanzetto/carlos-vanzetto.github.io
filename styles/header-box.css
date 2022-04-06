@@ -1,0 +1,35 @@
+.header {
+  padding: 20px 0;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+
+.header__box-title{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.title__name{
+  font: bold 16px raleway,sans-serif;
+  color: #464646;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width:480px) {
+  
+  .header{
+    width: 100%;
+  }
+  .header__box{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+  }
+}

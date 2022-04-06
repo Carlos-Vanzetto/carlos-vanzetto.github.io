@@ -7,55 +7,108 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css"> 
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/reset.css">  
+  <link rel="stylesheet" href="styles/flex.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="./styles/title-icon.css">
+  <link rel="stylesheet" href="./styles/header-box.css">
   <title>Encriptador-Alura Challenge</title>
 </head>
 <body>
-  <header>
-    <div class="caja">
-      <h1><img src="img/alura-logo.svg" alt="Logo de Alura" class="logo-img">
-      <img src="img/oracle.svg" alt="Logo de Oracle" class="logo-img">
-      </h1>
+  <header class="header">
+    <div class="header__box">
+      <div class="header__box-title">  
+        <div class="title__icon">
+          <img src="./img/Vector.png" alt="" class="title__icon-bigStar">
+          <div class="title__icon-verticalStars">
+            <img src="./img/Vector.png" alt="" class="title__icon-smallStar">
+            <img src="./img/Vector.png" alt="" class="title__icon-smallStar">
+          </div>
+        </div>
+        <h1 class="title__name">Carlos Vanzetto</h1>
+      </div>
+
+        <!--  ||    prueba de sidebar importada    ||-->
+
 
       
-      <nav role="navigation" class="primary-navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">En Desarrollo &dtrif;</a>
-            <ul class="dropdown">
-              <li><a href="challenge-uno.html">Challenge 1</a></li>
-              <li><a href="#">Challenge 2</a></li>
-              <li><a href="#">FEnd Challenge</a></li>
-              <li><a href="#">Iconography</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+            <li><a href="index.html">Sobre mi</a></li>
+            <li><a href="challenge-uno.html">Skills</a></li>
+            <li><a href="challenge-dos.html">Hobbies</a></li>
+            <li><a href="#">Formación</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+  <div id='center' class="main center">
+    <div class="mainInner">
+      <div></div>
     </div>
+    <div class="mainInner">
+      <div></div>
+    </div>
+    <div class="mainInner">
+      <div></div>
+    </div>
+  </div>
+
+
+      <!--   FINPRUEBA  sidebar importada  -->
+
+      
+  <div class="menu__desktop">
+    <nav role="navigation" class="primary__navigation">
+          <ul class="lista__desktop">     
+            <li><a href="index.html">Sobre mi</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Formación</a></li>
+            <li><a href="#">Proyectos &dtrif;</a>
+              <ul class="dropdown">
+                <li><a href="challenge-uno.html">Encriptador</a></li>
+                <li><a href="challenge-dos.html">Ahorcado</a></li>
+                <li><a href="#">Iconography</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
+
+  </div>
     
   </header>
   <main>
-    <h1 class="titulo-principal">Código secreto</h1>
-    <div class="big-contenedor">
+    <div class="contenedor__uno">
+      <h1 class="titulo__principal">Código secreto</h1>
+    </div>
+    <div class="big__contenedor">
       
       <div class="contenedor">
             
-          <label for="input-encriptar">
-            <h3 class="titulo-secundario">Escriba aquí el texto que desea encriptar o desencriptar.</h3>
-            <label>
-          <input type="text" id="input-encriptar" class="input-encript" autofocus>
-          <button class="btn" id="btn-encriptar">Encriptar</button>
-          <button class="btn" id="btn-desencriptar">Desencriptar</button>
-          <p> <img src="img/Vector.svg" alt=""> No admite uso de mayúsculas, acentos ni caracteres especiales</p>
+          <label for="input__encriptar">
+            <h3 class="titulo__secundario bold">Escriba aquí el texto que desea encriptar o desencriptar.</h3>
+          </label>
+          <input type="text" id="input-encriptar" class="input__encript" autofocus>
+          <div class="div__botones">
+            <button class="btn" id="btn-encriptar">Encriptar</button>
+            <button class="btn" id="btn-desencriptar">Desencriptar</button>
+          </div>
+          <p class="reglas__encriptar"> <img src="img/Vector.svg" class="icono" alt=""> No admite uso de mayúsculas, acentos ni caracteres especiales</p>
       </div>
       <div class="contenedor">
-        <h3 class="titulo-secundario">Mensaje encriptado</h3>
-        <input type="text" class="input-encript" id="mostrar-copiar">
+        <h3 class="titulo__secundario bold">Mensaje encriptado</h3>
+        <input type="text" class="input__encript" id="mostrar-copiar">
         <button class="btn" id="btn-copiar">Copiar</button>
+        <p class="reglas__encriptar"><img src="./img/info.png" class="icono" alt=""> Presione el botón para copiar al portapapeles</p>
       </div>
   </div>
 
@@ -63,12 +116,13 @@
 
 
   <footer>
-    <div>
-      <img src="img/alura-logo.svg" alt="logo de Alura">
-      <img src="img/oracle.svg" alt="logo de Oracle">
-      <p class="copyright">Carlos Vanzetto - Rosario, Santa Fe, Argentina - 2022</p>
+    <div class="footer__img">
+      <img src="img/alura-logo.svg" alt="logo de Alura" class="logo__img">
+      <img src="img/oracle.svg" alt="logo de Oracle" class="logo__img">
     </div>
+      <p class="copyright">Carlos Vanzetto - Rosario, Santa Fe, Argentina - 2022</p>
+    
   </footer>
-  <script src="encrypt.js"></script>
+  <script src="./components/encrypt.js"></script>
 </body>
 </html>

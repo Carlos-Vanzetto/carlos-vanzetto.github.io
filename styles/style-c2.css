@@ -1,0 +1,99 @@
+
+
+.btn {
+  width: 200px;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 0.5em;
+  transition: 0.7s all ease;
+}
+#nueva__palabra{
+  margin-top: 20px;
+}
+
+.btn:hover{
+  background-color: #264653;
+  cursor: pointer;
+  
+}
+.btn a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+.text__input {
+  border-radius: 0.5em;
+    border: 2px solid #464646;
+    display: block;
+    padding: 0.5em;
+    width: 30%;
+    height: 50px;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    
+}
+
+.canvas__cont{
+  text-align: center;
+  border: 1px solid black;
+  background-color: #FFFFFF;
+  width: 80%;
+  margin: 0 auto
+}
+
+
+#canvas__anchor{
+  position: relative;
+  bottom:20px;
+  margin: auto;
+  background-color: #264653;
+}
+.mensaje{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    top: 500px;
+    left: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.msj__derrota{
+  font-weight: bold;
+  font-size: 24px;
+  color: brown;
+  border: 2px solid brown;
+  padding: 3rem;
+  border-radius: 10px
+}
+
+.msj__victoria{
+  font-weight: bold;
+  font-size: 24px;
+  color: green;
+  border: 2px solid lightgreen;
+  padding: 3rem;
+  border-radius: 10px
+}
+
+/* footer{
+  position: relative;
+  text-align: center;
+  background: rgb(38, 70, 83);
+  padding: 40px;
+}
+
+footer p {
+  color: white;
+  font-size: 13px;
+  margin: 20px;
+} */
+
+@media screen and (max-width:480px){
+  #ahorcado{
+    width: 200px;
+    height: 300px;
+  }
+}

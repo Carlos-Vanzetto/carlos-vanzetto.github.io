@@ -3,32 +3,30 @@ body{
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   background-color: #e9edc9;
+  width: 100%;
+
 }
 
 header{
   background-color: #2a9d8f;
   padding: 20px 0;
 }
-header h1{
-  position: relative;
-  top: 30px;
-  left: 30px;
-}
+
 .caja{
   width: 100%;
   position: relative;
   margin: 0 auto;
 }
 
-nav, .primary-navigation {
+nav, .primary__navigation {
   margin: 0 auto;
   display: block;
   padding: 40px 0 0 0;
   text-align: end;
   font-size: 18px;
-  text-transform: uppercase;
+  
   }
-  nav .titulo-secundario{
+  nav .titulo__secundario{
     text-align: start;
     margin-left: 40px;
     margin-top: 20px;
@@ -114,16 +112,17 @@ a {
 
 main{
   background-color: #e9edc9;
+  
 }
 
-.titulo-principal{
+.titulo__principal{
   text-align: center;
     font-size: 2em;
     font-weight: bold;
-    margin: 1em 0px 2em 2em;
-    
+    margin: 1em 0;
+    text-transform: uppercase;
 }
-.big-contenedor{
+.big__contenedor{
   width: 80%;
   margin: 40px auto;
 }
@@ -146,14 +145,14 @@ main{
   margin-top: 100px;
 }
 
-.titulo-secundario{
+.titulo__secundario{
   text-align: center;
   font-size: 1.3em;
   margin: 0 0 1em;
 
 }
 
-.input-encript{
+.input__encript{
   display: block;
   margin: 20px auto;
   padding: 10px 25px;
@@ -170,7 +169,7 @@ main{
 
 
 
-.input-encript:focus{
+.input__encript:focus{
   border: 3px solid #2a9d8f ;
 }
 .btn{
@@ -207,13 +206,14 @@ footer img{
   margin: 20px;
 }
 
+
 @media screen and (max-width:480px) {
   
-   .titulo-principal{
+   .titulo__principal{
     margin: 1em auto;
     text-align: center;
   }
-  nav, .primary-navigation{
+  nav, .primary__navigation{
     margin-top: 50px;
   }
   nav a{
@@ -236,7 +236,7 @@ footer img{
     margin-top: 15px;
     font-size: 14px;
   }
-  .titulo-secundario{
+  .titulo__secundario{
     font-size: 1em;
   }
   .btn{

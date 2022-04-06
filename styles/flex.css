@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 92vh;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+
+.logo__img{
+  margin-left: 20px;
+}
+
+.menu__mobile{
+  display: none;
+}
+nav input{
+  display: none;
+}
+nav ul {
+  display: flex;
+
+}
+
+nav,
+.primary__navigation {
+
+  display: block;
+  text-align: end;
+  font-size: 18px;
+  
+}
+
+nav .titulo__secundario {
+  text-align: start;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+#openSidebarMenu{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+#sidebarMenu{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+nav ul {
+  display: inline;
+}
+
+.lista__desktop li{
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #264653;
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  
+}
+.dropdown li{
+    text-align: left;
+    margin-bottom: 20px;
+    border: none;
+}
+
+
+li a {
+  font-weight: 500;
+  color: #464646;
+}
+
+li a:hover{
+  color: black;
+  font-weight: 600;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.dropdown{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background-color:rgba(245, 245, 245,0.6);
+  width: 200px;
+}
+
+ul li:hover>ul,
+ul li ul:hover{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 220px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #e9edc9;
+}
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e9c46a;
+}
+
+ul li ul li a {
+  transition: all 0.8s ease;
+}
+.contenedor__uno{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-box-shadow: 0px -2px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -2px 3px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -2px 3px rgba(50, 50, 50, 0.75);
+  
+}
+
+.titulo__principal{
+  text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: #464646;
+}
+
+.big__contenedor{
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  margin-top: 50px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 3px solid #264653;
+  border-radius: 10px;
+  background-color: #fefefe;
+}
+
+.titulo__secundario{
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0 0 1em;
+  color: #464646;
+
+}
+.bold{
+  font-weight: 600;
+}
+
+.input__encript{
+  padding: 10px 25px;
+  font-size: 20px;
+  width: 80%;
+  height: 20%;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.input__encript:focus{
+  border: 3px solid #2a9d8f ;
+}
+
+.btn{
+  width: 150px;
+  height: 50px;
+  background-color: #2a9d8f;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  border-style: hidden;
+  transition: 500ms all;
+}
+
+.btn:hover{
+  background-color: #264653;
+  cursor: pointer;
+
+}
+
+.icono{
+  width: 15px;
+  height: 15px;
+}
+
+.reglas__encriptar{
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: -100px;
+  background: #264653;
+  text-align: center;
+  padding: 40px;
+}
+
+.copyright{
+  color: white;
+  font-size: 15px;
+  margin: 20px;
+}
+
+@media screen and (max-width:480px) {
+  body{
+    width: fit-content;
+  }
+  .caja{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .menu__mobile{
+    display: block;
+  }
+  nav label{
+    color: #464646;
+    font-weight: bold;
+  }
+  .menu__desktop{
+    display: none;
+  }
+  
+  input:checked  ~ .dropdown{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 30%;
+    visibility: visible;
+    opacity:1;
+    
+  }
+  footer{
+    flex-direction: column;
+  }
+
+}
+

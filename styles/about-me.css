@@ -1,0 +1,30 @@
+.about__me{
+  background-color: #EAF2FD;
+}
+.about__me-title{
+
+  color: #464646;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 16px 0px;
+  
+  
+}
+
+.about__me-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 3rem 6rem;
+  padding: 2rem 1rem;
+}
+
+.about__me-container p{
+  margin-bottom: 2rem;
+  position: static;
+  width: 751px;
+  line-height: 19px;
+  color: #464646;
+}

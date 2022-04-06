@@ -6,43 +6,181 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css"> 
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Encriptador-Alura Challenge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="styles/reset.css"> 
+  <link rel="stylesheet" href="styles/flex.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="./styles/title-icon.css">
+  <link rel="stylesheet" href="./styles/header-box.css">
+  <link rel="stylesheet" href="./styles/greeting.css">
+  <link rel="stylesheet" href="./styles/about-me.css">
+  <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/formacion.css">
+  <title>Inicio</title>
 </head>
 <body>
-  <header>
-    <div class="caja">
-      <h1><img src="img/alura-logo.svg" alt="Logo de Alura" class="logo-img">
-      <img src="img/oracle.svg" alt="Logo de Oracle" class="logo-img">
-      </h1>
+  <header class="header">
+    <div class="header__box">
+      <div class="header__box-title">  
+        <div class="title__icon">
+          <img src="./img/Vector.png" alt="" class="title__icon-bigStar">
+          <div class="title__icon-verticalStars">
+            <img src="./img/Vector.png" alt="" class="title__icon-smallStar">
+            <img src="./img/Vector.png" alt="" class="title__icon-smallStar">
+          </div>
+        </div>
+        <h1 class="title__name">Carlos Vanzetto</h1>
+      </div>
+
+        <!--  ||    prueba de sidebar importada    ||-->
+
 
       
-      <nav role="navigation" class="primary-navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">En Desarrollo &dtrif;</a>
-            <ul class="dropdown">
-              <li><a href="challenge-uno.html">Challenge 1</a></li>
-              <li><a href="#">Challenge 2</a></li>
-              <li><a href="#">FEnd Challenge</a></li>
-              <li><a href="#">Iconography</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+            <li><a href="index.html">Sobre mi</a></li>
+            <li><a href="challenge-uno.html">Skills</a></li>
+            <li><a href="challenge-dos.html">Hobbies</a></li>
+            <li><a href="#">Formación</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+  <div id='center' class="main center">
+    <div class="mainInner">
+      <div></div>
     </div>
+    <div class="mainInner">
+      <div></div>
+    </div>
+    <div class="mainInner">
+      <div></div>
+    </div>
+  </div>
+
+
+      <!--   FINPRUEBA  sidebar importada  -->
+
+      
+  <div class="menu__desktop">
+    <nav role="navigation" class="primary__navigation">
+          <ul class="lista__desktop">     
+            <li><a href="index.html">Sobre mi</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Formación</a></li>
+            <li><a href="#">Proyectos &dtrif;</a>
+              <ul class="dropdown">
+                <li><a href="challenge-uno.html">Encriptador</a></li>
+                <li><a href="challenge-dos.html">Ahorcado</a></li>
+                <li><a href="#">Iconography</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
+
+  </div>
     
   </header>
   <main>
-    <section class="contenedor">
-      <h2 class="titulo-secundario">Sitio en construcción</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim ducimus soluta dolor molestiae tempore quam officiis. Optio nostrum eos repellendus consequuntur necessitatibus maiores, similique, illum ipsum odit sapiente iste.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, exercitationem? Pariatur ad similique rerum nemo, ullam, praesentium aut nobis deserunt ipsam voluptas fuga amet repellat necessitatibus distinctio, cum esse dolores?</p>
+    <section>
+      <div class="greeting">
+      <div class="greeting__text">
+        <h1 class="greeting__title">Hola, mi nombre es Carlos Vanzetto y construyo páginas web</h1>
+        <p class="greeting__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam ab, omnis placeat aliquid facere quia at dolor recusandae debitis animi eligendi aperiam quaerat facilis minus? Quo soluta aliquid deleniti.</p>
+        <ul class="greeting__links-socialNet">
+          <li><a href="#" class="greeting__link">Github <i class="arrow__icon"></i></a></li>
+          <li><a href="#" class="greeting__link">Linkedin <i class="arrow__icon"></i></a></li>
+          <li><a href="#" class="greeting__link">Instagram <i class="arrow__icon"></i></a></li>
+          <li><a href="#" class="greeting__link">Curriculum <i class="arrow__icon"></i></a></li>
+        </ul>
+      </div>
+      <div class="greeting__image">
+        <img src="./img/profile-pic.jpg" alt="" class="profile__image">
+      </div>
+    </div>
+    </section>
+    <section class="about__me" >
+      <div class="about__me-container">
+        
+          <h2 class="about__me-title">Sobre mi</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim ducimus soluta dolor molestiae tempore quam officiis. Optio nostrum eos repellendus consequuntur necessitatibus maiores, similique, illum ipsum odit sapiente iste.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, exercitationem? Pariatur ad similique rerum nemo, ullam, praesentium aut nobis deserunt ipsam voluptas fuga amet repellat necessitatibus distinctio, cum esse dolores?</p>
+          <div class="about__me-img">
+            <img src="./img/firma.png" alt="" class="about__me-firm">
+          </div>
+        
+    </div>
+    </section>
+    <section class="skills">
+      <h2 class="skills__title">Skills</h2>
+      <div class="skills__container">
+        
+        <div class="skill__box"><i class="skills__icon fa-brands fa-html5"></i><span class="skills__subtitle">Html5</span></div>
+        <div class="skill__box"><i class="skills__icon fa-brands fa-css3-alt"></i><span class="skills__subtitle">CSS</span></div>
+        <div class="skill__box"><i class="skills__icon fa-brands fa-js-square"></i><span class="skills__subtitle">Javascript</span></div>
+        <div class="skill__box"><i class="skills__icon fa-brands fa-git-square"></i><span class="skills__subtitle">Git</span></div>
+        <div class="skill__box"><i class="skills__icon fa-brands fa-node"></i><span class="skills__subtitle">Node JS</span></div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2 class="skills__title">Hobbies</h2>
+      <div class="skills__container">
+        
+        <div class="skill__box"><i class="skills__icon fa-solid fa-guitar"></i><span class="skills__subtitle">Guitarra</span></div>
+        <div class="skill__box"><i class="skills__icon fa-solid fa-book-open-reader"></i></i><span class="skills__subtitle">Lectura</span></div>
+        <div class="skill__box"><i class="skills__icon fa-solid fa-person-hiking"></i><span class="skills__subtitle">Hiking</span></div>
+        <div class="skill__box"><i class="skills__icon fa-solid fa-person-biking"></i><span class="skills__subtitle">Ciclismo</span></div>
+        <div class="skill__box"><i class="skills__icon fa-solid fa-kitchen-set"></i><span class="skills__subtitle">Cocina</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="formacion">
+        <h2 class="skills__title">Formación Académica</h2>
+        <div class="formacion__container">
+          <div class="formacion__bigBox">
+            <div class="formacion__box">
+              <img src="./img/logo-alura-v2.png" alt="Logo Alura">
+            </div>
+            <div class="formacion__descripcion">
+              <h3 class="skills__subtitle">Oracle Next Education</h3>
+              <span class="formacion__descripcion-span">2022 - Alura</span>
+            </div>
+          </div>
+          <div class="formacion__bigBox">
+            <div class="formacion__box">
+              <img src="./img/ed-it.svg" alt="Logo educacion IT">
+            </div>
+            <div class="formacion__descripcion">
+              <h3 class="skills__subtitle">PHP fullstack developer</h3>
+              <span class="formacion__descripcion-span">2019 - Educacion IT </span>
+            </div>
+          </div>
+          <div class="formacion__bigBox">
+            <div class="formacion__box">
+              <img src="./img/Logo_UNR.jpg" alt="">
+            </div>
+            <div class="formacion__descripcion">
+              <h3 class="skills__subtitle">Lic. en Estadística</h3>
+              <span>2015 - UNR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="skills__title">Experiencia en programación</h2>
 
     </section>
 
@@ -50,11 +188,12 @@
 
 
   <footer>
-    <div>
-      <img src="img/alura-logo.svg" alt="logo de Alura">
-      <img src="img/oracle.svg" alt="logo de Oracle">
-      <p class="copyright">Carlos Vanzetto - Rosario, Santa Fe, Argentina - 2022</p>
+    <div class="footer__img">
+      <img src="img/alura-logo.svg" alt="logo de Alura" class="logo__img">
+      <img src="img/oracle.svg" alt="logo de Oracle" class="logo__img">
     </div>
+      <p class="copyright">Carlos Vanzetto - Rosario, Santa Fe, Argentina - 2022</p>
+    
   </footer>
   
 </body>
